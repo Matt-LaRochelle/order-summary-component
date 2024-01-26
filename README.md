@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub Code](https://github.com/Matt-LaRochelle/order-summary-component)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Live Site URL: [Live Site](https://matt-larochelle.github.io/order-summary-component/)
 
 ## My process
 
