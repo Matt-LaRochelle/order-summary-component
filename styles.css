@@ -13,23 +13,31 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid red;
+    background:hsl(223, 43%, 80%)
 }
 
 main {
     max-width: 600px;
-    border: 2px solid orange;
     border-radius: 24px;
     overflow: hidden;
 }
-
+.top {
+    margin: 0;
+    padding: 0;
+    height: 225px;
+}
 .top img {
     width: 100%;
+    height: 225px;
     object-fit: cover;
+    margin: 0;
 }
 
 .content {
-    padding: 35px;
+    padding: 25px;
+    background-color: #fff;
+    margin: 0;
+    padding: 50px 50px 20px;
 }
 .content h1 {
     font-size: 2rem;
@@ -40,17 +48,18 @@ main {
 
 .content p {
     text-align: center;
-    max-width: 30ch;
+    width: min(30ch, 90%);
     padding: 10px;
     margin: 10px auto;
-    color: hsl(240, 15%, 61%);
+    color: #83889E;
+    line-height: 1.7rem;
 }
 
 .plan {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: hsl(225, 100%, 98%);
+    background-color: #F8F9FE;
     padding: 20px;
     border-radius: 18px;
 }
@@ -58,21 +67,22 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 200px;
+    width: 160px;
 }
 .plan img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 }
 
 .plan h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 700;
     margin: 0;
     color: hsl(223, 47%, 23%);
 }
 .plan p {
     margin: 0;
+    padding: 0;
 }
 
 .content button {
@@ -86,11 +96,21 @@ main {
     border: none;
     cursor: pointer;
     margin: 30px 0;
+    box-shadow: 0 10px 20px hsla(245, 41%, 48%, 0.618);
+}
+.content button:hover {
+    background-color: hsl(242, 76%, 66%);
+    cursor: pointer;
 }
 .plan a {
     color: hsl(245, 75%, 52%);
     font-size: 1.2rem;
     text-decoration: underline;
+}
+.plan a:hover {
+    color: hsl(242, 76%, 66%);
+    cursor: pointer;
+    text-decoration: none;
 }
 a {
     text-decoration: none;
@@ -101,11 +121,30 @@ a {
     display: block;
     margin: 20px 0;
 }
+a:hover {
+    color: hsl(223, 47%, 23%);
+    cursor: pointer;
+}
 
 footer {
     display: flex;
 }
 footer a {
     margin: none;
+    margin-top: 0;
+    margin-left: 3px;
+    font-size: 11px;
 }
 
+
+@media screen and (max-width: 500px) {
+    body {
+        padding: 5px;
+    }
+    .content {
+        padding: 30px 30px 20px;
+    }
+    .plan a {
+        font-size: 1rem;
+    }
+}
