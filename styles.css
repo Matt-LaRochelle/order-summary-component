@@ -93,7 +93,7 @@ main {
     margin: 30px 0;
     box-shadow: 0 10px 20px hsla(245, 41%, 48%, 0.618);
 }
-.content button:active {
+.content button:hover {
     background-color: hsl(242, 76%, 66%);
     cursor: pointer;
 }
@@ -103,7 +103,7 @@ main {
     text-decoration: underline;
     margin: 0;
 }
-.plan a:active {
+.plan a:hover {
     color: hsl(242, 76%, 66%);
     cursor: pointer;
     text-decoration: none;
@@ -117,7 +117,7 @@ a {
     display: block;
     margin: 0 0 22px;
 }
-a:active {
+a:hover {
     color: hsl(223, 47%, 23%);
     cursor: pointer;
 }
